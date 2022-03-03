@@ -31,7 +31,8 @@ _During installation the CIAB Installer can choose from many different **Desktop
 > - **Gnome**  
 > - **MATE**  
 > - **XFCE**  
-> - **KDE Plasma** 
+> - **KDE Plasma**   
+> - **Cinnamon**  
 
 CIAB installs each DE in a separate "unprivileged" LXD container whose name is entered by the CIAB Installer during installation.
 For each DE selected & installed the CIAB Installing User will automatically be setup with a User Account in that Desktop Container.
