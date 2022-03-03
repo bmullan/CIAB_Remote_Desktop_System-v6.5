@@ -15,25 +15,25 @@ _**I am happy to introduce CIAB v6.5**_ of the CIAB Remote Desktop System.   I t
 
 With CIAB v6.5 the project *now has two **use-cases** supported* to enable *End-User* access to CIAB container Desktop Environments, Local or Remote:  
 
-> **Use-Case (A)** - CLI direct access to any of the CIAB container Desktop Environments (DE)  
-> **Use-Case (B)** - Web Browser HTTPS access using Guacamole, Tomcat, NGINX, PostgreSQL *as a Web based Portal* which builds on Use-Case (A).
+> **Use-Case (A)** - CLI direct access only to any of the *CIAB cCntainer Desktop Environments (DE)*  
+> **Use-Case (B)** - Adds **HTML5 Browser HTTPS access using Guacamole, Tomcat, NGINX, PostgreSQL** *as a Web based Portal to Use-Case (A)*.
 
 ---
 
 #### Steps to Install CIAB Use-Case (A)  
 
 1) Create a temporary "work" directory on your server/VM/Cloud-Instance owner and group should be your UserID 
-> $ sudo mkdir /opt/ciab  
-> $ sudo chown $USER:$USER /opt/ciab  
-> $ sudo chmod 766 /opt/ciab  
-> $ cd /opt/ciab/  
+> **$ sudo mkdir /opt/ciab**  
+> **$ sudo chown $USER:$USER /opt/ciab**    
+> **$ sudo chmod 766 /opt/ciab**  
+> **$ cd /opt/ciab/**  
 
 2) Download the CIAB scripts from the Github Repository  
-> $ wget https://github.com/bmullan/CIAB_Remote_Desktop_System-v6.5/archive/refs/heads/main.zip
+> **$ wget https://github.com/bmullan/CIAB_Remote_Desktop_System-v6.5/archive/refs/heads/main.zip**
 
-4) $ unzip unzip *.zip  
-5) now begin the process to create a CIAB LXD Desktop Container 
-> $ mk*.sh  
+3) **$ unzip unzip *.zip**  
+4) now begin the process to create a CIAB LXD Desktop Container 
+> **$ mk*.sh**  
 > - This will execute the script "***mk-ciab-desktop-container.sh***".  
 
 The User installing a CIAB Desktop Container will be asked for a name for the new Desktop Container.  
@@ -68,14 +68,15 @@ to connect via RDP to the associated Desktop Container's DE.   This created scri
 Host "Home" Directory and also copied to "/usr/bin/"
 
 > **NOTE:**  *if the CIAB Container Desktop created was called **mate-desktop*** then the above "***startup bash scrip***t" would be  
-> named "**mate-desktop.sh**"  
+> named "***mate-desktop.sh**"  
 
-So *anyone with a User Account in that LXD Desktop Container(using our mate-desktop example)* would just execute:  
+*At this point the selected Container Desktop Environment (DE) has been created and can be used from the CLI using the created startup Bash script !*
+
+So *anyone with a User Account in that LXD Desktop Container (using our mate-desktop example)* would just execute:  
 >  **$ mate-desktop.sh**  
 
 *A login menu will pop-up and the user only needs to enter their Container Desktop Password which will bring up the Mate-Desktop in this example.*
 
-At this point the selected Container Desktop Environment (DE) has been created and can be used from the CLI using the created startup Bash script !
 
 ---
 
@@ -90,8 +91,8 @@ Earlier all of the CIAB installation files were copied to /opt/ciab/ so open a t
 > **$ cd /opt/ciab**  
 
 Execute the script "***setup-ciab-guac.sh***"  which will:  
-1) create an additonal LXD container called "**ciab-guac**" and enable "*nesting*" *within the ciab-guac container*.  
-2) a *Dockerized* Guacamole, NGINX, Tomcat, PostgreSQL container will be installed/"nested" insude the LXD "ciab-guac" container.  
+1) Create an additonal LXD container called "**ciab-guac**" and enable "*nesting*" *within the ciab-guac container*.  
+2) Install a *Dockerized* *Guacamole, NGINX, Tomcat, PostgreSQL* container "***nested***" insude the LXD "ciab-guac" container.  
 
 #### _**CIAB - "Cloud in a Box"**_  
 
