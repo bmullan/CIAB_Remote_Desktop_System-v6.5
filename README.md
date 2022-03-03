@@ -61,11 +61,12 @@ Next the selected DE will be installed & configured in the Desktop Container.
 The installation will also download source code for the very latest release of **[xRDP from NeutrinoLabs](https://github.com/neutrinolabs/xrdp)**  
 The source code will be compiled w/support for Audio and Drive "redirection" enabled and then installed in the Desktop Container.
 
-The last step the installation does is create a startup bash script with a highly customized xfreerdp command line pre-built
+The last step the installation does is create a startup bash script with a highly customized xfreerdp command line *pre-built*
 to connect via RDP to the associated Desktop Container's DE.   This created script will be placed in the installing UserID's
 Host "Home" Directory and also copied to "/usr/bin/"
 
-> **NOTE:**  *if the CIAB Container Desktop created was called **mate-desktop*** then the above "***startup bash scrip***t" would be named "**mate-desktop.sh**"  
+> **NOTE:**  *if the CIAB Container Desktop created was called **mate-desktop*** then the above "***startup bash scrip***t" would be  
+> named "**mate-desktop.sh**"  
 
 So *anyone with a User Account in that LXD Desktop Container(using our mate-desktop example)* would just execute:  
 >  **$ mate-desktop.sh**  
