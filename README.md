@@ -109,7 +109,7 @@ This means the connection **from** a User **to** the Remote Desktop is _**encryp
 ---
   
 To configure the ***Guacamole*** front-end Proxy follow the ***Installation Diagrams & Information*** in the   
-_**[CIAB Remote Desktop System Installation Guide.PDF](https://github.com/bmullan/CIAB_Remote_Desktop_System-v6/blob/main/CIAB%20Remote%20Desktop%20System%20Installation.pdf)**_
+_**[CIAB Remote Desktop System Installation Guide.PDF](https://github.com/bmullan/CIAB_Remote_Desktop_System-v6.5/blob/main/CIAB%20Remote%20Desktop%20System%20Installation.pdf)**_
 
 
 ---
