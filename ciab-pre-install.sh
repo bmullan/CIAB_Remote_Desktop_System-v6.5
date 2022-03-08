@@ -88,13 +88,12 @@ sudo adduser $USER lxd
 newgrp lxd
 
 echo
-echo "==============================================================================================================================="
-echo echo 
-echo " Next.. Please execute:"
-echo
-echo "                  ciab-install.sh"
 echo
 echo
+echo "===={ LXD is now installed }==================================================================================================="
+echo 
+echo 
+
 
 exit
 
