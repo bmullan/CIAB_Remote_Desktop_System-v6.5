@@ -277,14 +277,14 @@ fi
 
 ## -- Download the latest xrdp and xorgxrdp files
 echo
-/bin/echo -e "\e[1;32m       |-|  Downloading xRDP Binaries.....     \e[0m"
-echo
-git clone https://github.com/neutrinolabs/xrdp.git
+# To solve your issue, you can try to add the option --recursive in the git clone command used to download xrdp and xorgxrdp packages
+git clone --recursive https://github.com/neutrinolabs/xrdp.git
+
 echo
 /bin/echo -e "\e[1;32m       |-|  Downloading xorgxrdp Binaries...     \e[0m"
 echo
 
-git clone https://github.com/neutrinolabs/xorgxrdp.git
+git clone --recursive https://github.com/neutrinolabs/xorgxrdp.git
 
 }
 
