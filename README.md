@@ -15,7 +15,7 @@ _**I am happy to introduce CIAB v6.5**_ of the CIAB Remote Desktop System.   I t
 
 With CIAB v6.5 the project *now has two **use-cases** supported* to enable *End-User* access to CIAB container Desktop Environments, Local or Remote:  
 
-> **Use-Case (A)** - CLI direct access only to any of the *CIAB cCntainer Desktop Environments (DE)*  
+> **Use-Case (A)** - CLI direct access only to any of the *CIAB Container Desktop Environments (DE)*  
 > **Use-Case (B)** - Adds **HTML5 Browser HTTPS access using Guacamole, Tomcat, NGINX, PostgreSQL** *as a Web based Portal to Use-Case (A)*.
 
 ---
